@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Moncasa</title>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+            var asunto = document.getElementById("name").value
+	        var mensaje = document.getElementById("msg").value
+	        var correo = document.getElementById("email").value
+            Email.send({
+				Host: "smtp.gmail.com",
+				Username : "contactopersonalmoncasa@gmail.com",
+				Password : "moncasa2020",
+				To : 'contacto@personalmoncasa.com',
+				From : correo,
+				Subject : asunto,
+				Body : mensaje,
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script>
+</head>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
