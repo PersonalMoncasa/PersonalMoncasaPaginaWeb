@@ -9,10 +9,12 @@ body {
 }
 
 .contenedor {
-    text-align: center,justify;
+    text-align: center;
+    margin-left: 50px;
+    margin-right:50px ;
     padding: 10px 0;
-    width: 95%;
-    max-width: 1000px;
+    align-items: center;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -46,13 +48,20 @@ header {
     border: white;
 }
 
+.slogan{
+
+    font-weight: bolder;
+    font-size: x-large;
+
+
+}
 .container-nav{
     max-width: auto;
   margin: 0;
   overflow: hidden;
   padding: 0px;
   font-weight: lighter;
-  font-size: smaller;
+  font-size: small;
 }
 
 .navbar {
@@ -90,11 +99,22 @@ header {
   }
   
   .navbar ul li a:hover {
-    color: rgb(0, 81, 255);
+    color: rgb(88, 88, 88);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    
   }
 
 
+  .contenedorquienesSomos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center,justify;
 
+
+  }
 header .textos-header{
     display: flex;
     height: 500px;
@@ -111,6 +131,14 @@ header .textos-header{
 }
 
 .textos-header h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color:#fff;
+}
+
+.textos-header h3{
+    margin-bottom: 10px;
     font-size: 30px;
     font-weight: 300;
     color:#fff;
@@ -123,13 +151,80 @@ header .textos-header{
 }
 
 /* About us */
+.tituloquienesSomos{
+
+    color: #011a8b;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center; 
+
+
+}
+.titulservicios{
+
+    color: #011a8b;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+.tituloacerdade{
+    color: #011a8b;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+
+
+
+}
+.tituloventajas{
+
+    color: #011a8b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+
+} 
+.parrafo1ventajasexp{
+    color: #011a8b;
+    font-size: x-large;
+    font-weight: lighter;
+}
+.parrafo1ventajas{
+    font-weight: normal;
+    color: rgb(139, 139, 139);
+    padding-bottom: 20px;
+
+}
+.contenedor-ventajas{
+
+    text-align: left,justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+
+    justify-content: space-evenly;
+
+}
 
 main .sobre-nosotros{
     margin-top: 20px;
     padding: 30px 0 60px 0;
 }
 .contenedor-sobre-nosotros{
-    
+    text-align: left;
+    padding-top: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -141,16 +236,17 @@ main .sobre-nosotros{
 }
 
 .sobre-nosotros .contenido-textos{
-    width: 48%;
+    width: 40%;
     
 }
 
 .contenido-textos h3{
     margin-bottom: 15px;
+    font-weight: lighter;
 }
 
 .contenido-textos h3 span{
-    background: #acabab;
+    background: #0300ad;
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -163,7 +259,7 @@ main .sobre-nosotros{
 }
 
 .contenido-textos p{
-    padding: 0px 0px 50px 30px;
+    padding: 0px 0px 15px 30px;
     font-weight: 300;
     text-align: justify;
 }
@@ -229,7 +325,7 @@ main .sobre-nosotros{
 /* Clients */
 
 .cards{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -241,8 +337,8 @@ main .sobre-nosotros{
     height: 250px;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
 .cards .card img{
@@ -256,23 +352,35 @@ main .sobre-nosotros{
 }
 
 .cards .card > .contenido-texto-card{
-    width: 60%;
+    width: 70%;
     text-align: center;
+    font-weight: lighter;
     color: #fff;
 }
 
-.cards .card > .contenido-texto-card p{
+
+.cards .card > .contenido-texto-card h4{
+    font-size: 20px;
+    text-align: center,justify;
+    font-weight: normal;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    }
+
+    .cards .card > .contenido-texto-card p{
     font-weight: 400;
-    text-align: center;
-    padding-top: 5px;
+    text-align: center,justify;
+    font-weight: lighter;
+    padding-top: 1px;
 }
 
 /*  Our team */
 
 .about-services{
-    margin-top: 60px;
-    background: #f2f2f2;
-    padding-bottom: 30px;
+    margin-top: 80px;
+    width: 100%;
+    background: white;
+    padding-bottom: 0px;
     text-align: center;
 }
 
@@ -309,32 +417,40 @@ form{
     padding-bottom: 20px;
     width: 700px;
     margin: auto;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(0, 26, 255);
     text-align: left;
     color: white;
+    box-sizing: border-box;
     
+  }
+
+   button{
+
+    margin-top: 15px;
+
   }
 
   section#contacto-form{
 
     align-items: center;
+    margin: auto;
     
 
   }
 
   input{
-    margin: 15px;
+    margin: auto;
     padding:10px;
     width: 640px;
     font-size: 18px;
     border: black;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   textarea{
     font-size: 18px;
-    margin: 15px;
-    padding: 10px;
+    margin: auto;
+    padding-bottom: 20px;
     min-width: 640px;
     max-width: 640px;
     min-height: 100px;
@@ -379,6 +495,7 @@ footer{
     font-size: 24px;
     margin: 20px 0 10px 0;
     color: #ffffff;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:900px){
@@ -442,7 +559,50 @@ footer{
         width: 20%;
     }
 
+    form{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        width: 700px;
+        margin: auto;
+        background-color: rgb(80, 80, 80);
+        text-align: left;
+        color: white;
+        
+      }
+      
+      section#contacto{
 
+        background-color: white;
+
+      }
+      section#contacto-form{
+    
+        align-items: left;
+        margin: auto;
+        
+    
+      }
+    
+      input{
+        margin: auto;
+        padding:10px;
+        width: auto;
+        font-size: 18px;
+        border: black;
+        margin-bottom: 5px;
+        display: block;
+      }
+    
+      textarea{
+        font-size: 18px;
+        margin: auto;
+        padding: 10px;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 100px;
+        max-height: 200px;
+      }
   
 }
 
@@ -494,6 +654,47 @@ footer{
         width: 90px;
         height: 90px;
     }
+
+    form{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        width: 700px;
+        margin: auto;
+        background-color: rgb(80, 80, 80);
+        text-align: left;
+        color: white;
+        
+      }
+    
+      section#contacto-form{
+    
+        align-items: left;
+        margin: auto;
+        
+    
+      }
+    
+      input{
+        margin: auto;
+        padding:0;
+        width: auto;
+        text-align: left;
+        font-size: 18px;
+        border: black;
+        margin-bottom: 5px;
+        display: block;
+      }
+    
+      textarea{
+        font-size: 18px;
+        margin: auto;
+        padding: 0;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 100px;
+        max-height: 200px;
+      }
 
     /* Footer */
 
