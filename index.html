@@ -12,7 +12,8 @@
 		function sendEmail() {
             var asunto = document.getElementById("name").value
 	        var mensaje = document.getElementById("msg").value
-	        var correo = document.getElementById("email").value
+            var correo = document.getElementById("email").value
+            var telefono = document.getElementById("telefono").value
             Email.send({
 				Host: "smtp.gmail.com",
 				Username : "contactopersonalmoncasa@gmail.com",
@@ -20,7 +21,7 @@
 				To : 'contacto@personalmoncasa.com',
 				From : correo,
 				Subject : asunto,
-				Body : mensaje,
+				Body : mensaje +  " El Telefono de " + asunto + "  es: " + telefono,
 			})
 			.then(function(message){
 				alert("mail sent successfully")
@@ -48,9 +49,9 @@
                 <section id="PersonalMoncasa" class="textos-header">
             <img src="img/LOGO MONCASA AZUL.jpg" class="imgLogo">
             <h1>Personal Moncasa.</h1>
-            <h2>Dispersa tu nómina fácil.</h2>
-            <h2>"Otorgando beneficios a tus colaboradores,optimizando tus procesos organizacionales y </h2>
-            <h2>logrando mejores rendimientos para tu empresa."</h2>
+            <h2>"Dispersa tu nómina fácil."</h2>
+            <h3>Otorgando beneficios a tus colaboradores,optimizando tus procesos organizacionales y </h3>
+            <h3>logrando mejores rendimientos para tu empresa.</h3>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -61,24 +62,24 @@
     </header>
     <main>
         
-        <section id="QuienesSomos" class="contenedor sobre-nosotros">
-            <h2 class="titulo">¿Quienes Somos?</h2>
-            <section class="texto-quienes-somos">
-            <p>Somos una empresa Mexicana comprometida con nuestros clientes, ofrecemos soluciones 
+        <section id="QuienesSomos" class="contenedorquienesSomos">
+            <h2 class="tituloquienesSomos">¿Quienes Somos?</h2>
+            <section >
+                <h1 class="parrafo1ventajas">Somos una empresa Mexicana comprometida con nuestros clientes, ofrecemos soluciones 
                 fiscales y financieras relacionadas con la administración de su nómina y de su personal de trabajo.
-                tenemos presencia en varios estados del país</p>
-                <p>Este esquema es reconocido como outsourcing o subcontratación de personal y según 
+                tenemos presencia en varios estados del país.</h1>
+                <h1 class="parrafo1ventajas">Este esquema es reconocido como outsourcing o subcontratación de personal y según 
                 la revista Forbes en México, aproximadamente el 50% de las empresas utilizan este modelo para lograr 
-                una mejor productividad, rentabilidad y efectividad en las mismas.</p>
-                <p>Contamos con mas de 10 años de experiencia.</p>
+                una mejor productividad, rentabilidad y efectividad en las mismas.</h1>
+                <h1 class="parrafo1ventajasexp" >Contamos con mas de 10 años de experiencia.</h1>
             </section>
           
         </section>
         <section class="clientes contenedor">
-            <h2 class="titulo">Acerca de Personal Moncasa.</h2>
+            <h2 class="tituloacerdade">Acerca de Personal Moncasa.</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="img/mision.png" alt="">
+                    <img src="img/img2.jpg" alt="">
                     <div class="contenido-texto-card">
                         <h4>Misión.</h4>
                         <p>Trabajar soluciones fiscales y financieras eficientes, 
@@ -87,7 +88,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/vision.png" alt="">
+                    <img src="img/economy-3213967_1920.jpg" alt="">
                     <div class="contenido-texto-card">
                         <h4>Visión.</h4>
                         <p>Construir relaciones a largo plazo profesionales y confiables con cada uno de nuestros clientes,
@@ -98,23 +99,23 @@
             </div>
         </section>
         <section id="Servicios" class="contenedor sobre-nosotros">
-            <h2 class="titulo">Servicios.</h2>
+            <h2 class="titulservicios">Servicios.</h2>
             <section class="texto-quienes-somos">
             <div class="contenedor-sobre-nosotros">
-                <img src="img/5785.jpg" alt="" class="imagen-about-us">
+                <img src="img/20091.jpg" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
                     <h3><span>1</span>ADMINISTRACION Y PAGO DE NOMINAS</h3>
                     <p>Moncasa al ser especializado en Nóminas proporciona estrategias fiscales y laborales que cumplen ante la ley, para la gestión de pago de sus empleados
-                        Evitamos que su empresa se atrase en altas o bajas de tus empleados ante las instituciones correspondientes como el IMSS
-                        Pagamos en tiempo las prestaciones de sus trabajadores, evitando riesgos de Multas  y/o recargos
+                        Evitamos que su empresa se atrase en altas o bajas de tus empleados ante las instituciones correspondientes como el IMSS.</p>
+                        <p>Pagamos en tiempo las prestaciones de sus trabajadores, evitando riesgos de Multas  y/o recargos
                         El personal de su empresa no invertira tiempo en el calculo de sueldos y retenciones.
-                        Recibos de nóminas timbrados con todas las prestaciones de Ley.
-                        Un equipo de especialistas en IMSS, Nómina fiscal y laboral estará a su disposición
+                        Recibos de nóminas timbrados con todas las prestaciones de Ley.</p>
+                        <p>Un equipo de especialistas en IMSS, Nómina fiscal y laboral estará a su disposición
                         En caso de requerir podria ponerse un persona en sitio para la administración de su nómina
                         Prestaciones superiores de ley.</p>
                     <h3><span>2</span>RECLUTAMIENTO DE PERSONAL Y SELECCIÓN</h3>
-                    <p>Encontramos al talento profesional de forma eficiente y oportuna que su empresa requiere , ahorrando tiempo que pueden utilizar  para enfocarse en sus operaciones 
-                        Reducimos la posibilidad de rotacion de personal de forma productiva y eficiente.
+                    <p>Encontramos al talento profesional de forma eficiente y oportuna que su empresa requiere , ahorrando tiempo que pueden utilizar  para enfocarse en sus operaciones</p> 
+                        <p>Reducimos la posibilidad de rotacion de personal de forma productiva y eficiente.
                         Pruebas Psicometricas que ayudan a evaluar y detectar las competencias de sus empleados.</p>
                         <h3><span>3</span>ASESORIA FISCAL LABORAL</h3>
                         <p>Consistente en la atención, seguimiento y litigio en diferentes instancias que haya lugar en defensa de los intereses de los clientes de Moncasa y todo los realcionado de las actividades del laborales en materia de fiscalización, determinación de créditos, devoluciones, compensaciones y otros trámites.
@@ -188,12 +189,15 @@
                 </div>
             </div>
         </section>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">10 VENTAJAS DE TRABAJAR CON OUTSOURCING O SUB CONTRATACIÓN DE PERSONAL</h2>
-            <p>El término outsourcing se escucha frecuentementeen los departamentos de Recursos Humanos de las empresas.
-                Se refiere a la contratación de personal especializado mediante una empresa externa, es decir, son empresas que se dedican a canalizar talento y contratar gente para otras empresas.
-                Bien administrado y ejecutado, el outsourcing de personal  resulta muy benéfico para las empresas ,  ya que se puede ahorrar hasta el 50% en gastos del negocio y con mayores prestaciones a los empleados y beneficios también para los patrones.
-                A continuación te presentamos algunas de las ventajas  que tiene el sistema de outsorcing:   Ventajas</p>
+                <section class="contenedor-ventajas">
+                    <h2 class="tituloventajas">10 VENTAJAS DE TRABAJAR CON OUTSOURCING O SUB CONTRATACIÓN DE PERSONAL</h2>
+                    <h1 class="parrafo1ventajas">El término outsourcing se escucha frecuentementeen los departamentos de Recursos Humanos de las empresas.
+                    Se refiere a la contratación de personal especializado mediante una empresa externa, es decir, son empresas que se dedican a canalizar talento y contratar gente para otras empresas.</h1>
+                    <p></p>
+                    <h1 class="parrafo1ventajas">Bien administrado y ejecutado, el outsourcing de personal  resulta muy benéfico para las empresas ,  ya que se puede ahorrar hasta el 50% en gastos del negocio y con mayores prestaciones a los empleados y beneficios también para los patrones.</h1>
+                    <p></p>
+                    <h1 class="parrafo1ventajas">A continuación te presentamos algunas de las ventajas  que tiene el sistema de outsorcing:</h1>
+                </section>
             <section class="texto-quienes-somos">
             <div class="contenedor-sobre-nosotros">
                 <img src="img/manossss.png" alt="" class="imagen-about-us">
@@ -246,22 +250,24 @@
                         <p>Contacto@personalmoncasa.com</p>
                     </div>
                 </div>
+                <img src="img/LOGO MONCASA AZUL.jpg" class="imgLogo">
             </div>
         </section>
         <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(0, 4, 255);"></path></svg></div>
         <section class="contacto-form">
+            
             <h2 class="titulo">Solicita tu asesoría:</h2>
             
                 <form method="POST">
                     Nombre:
-                    <input type = "text" placeholder="Name" id="name" required="">
+                    <input type = "text" placeholder="Nombre" id="name" required="">
                     Correo:
                     <input type = "email" placeholder="Email" id="email" required="">
                     Telefono:
                     <input type = "text" placeholder="Telefono" id="telefono" required="">
                     Mensaje:
                     <textarea placeholder="Mensaje" id="msg" ></textarea>
-                    <input type="button" value="Send Email" onclick="sendEmail()"/>
+                    <input type="button" value="Enviar" onclick="sendEmail()"/>
     
     
                 </form>
